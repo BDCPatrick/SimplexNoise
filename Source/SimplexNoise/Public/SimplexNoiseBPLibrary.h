@@ -28,11 +28,11 @@ I only request that you mention me in the credits for your game in the way that 
 	struct FPoint {
 		GENERATED_BODY()
 		UPROPERTY()
-			float x;
+			float x = 0.0f;
 		UPROPERTY()
-			float y;
+			float y = 0.0f;
 		UPROPERTY()
-			float z;
+			float z = 0.0f;
 	};
 
 
