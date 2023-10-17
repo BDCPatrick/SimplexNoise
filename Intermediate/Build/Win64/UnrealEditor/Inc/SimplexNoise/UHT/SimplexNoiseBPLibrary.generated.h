@@ -30,11 +30,11 @@ template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<struct FPoint>();
 template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<struct FTriangle>();
 
 #define FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_48_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FCell_Statics; \
+	friend struct Z_Construct_UScriptStruct_FNoiseCell_Statics; \
 	SIMPLEXNOISE_API static class UScriptStruct* StaticStruct();
 
 
-template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<struct FCell>();
+template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<struct FNoiseCell>();
 
 #define FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_58_SPARSE_DATA
 #define FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_58_SPARSE_DATA_PROPERTY_ACCESSORS

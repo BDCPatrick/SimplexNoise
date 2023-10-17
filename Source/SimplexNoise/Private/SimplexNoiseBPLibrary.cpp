@@ -457,7 +457,7 @@ float USimplexNoiseBPLibrary::_simplexNoise4D(float x, float y, float z, float w
 	return 27.0f * (n0 + n1 + n2 + n3 + n4);
 }
 
-int USimplexNoiseBPLibrary::_polygonise(FCell cell, float isolevel, FTriangle* triangles)
+int USimplexNoiseBPLibrary::_polygonise(FNoiseCell cell, float isolevel, FTriangle* triangles)
 {
 	return 0;
 }

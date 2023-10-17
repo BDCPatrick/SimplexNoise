@@ -44,7 +44,7 @@ I only request that you mention me in the credits for your game in the way that 
 	};
 
 	USTRUCT()
-	struct FCell {
+	struct FNoiseCell {
 		GENERATED_BODY()
 		UPROPERTY()
 			FPoint point[8];
@@ -67,7 +67,7 @@ private:
 	static float _simplexNoise2D(float x, float y);
 	static float _simplexNoise3D(float x, float y, float z);
 	static float _simplexNoise4D(float x, float y, float z, float w);
-	static int	  _polygonise(FCell cell, float isolevel, FTriangle* triangles);
+	static int	  _polygonise(FNoiseCell cell, float isolevel, FTriangle* triangles);
 
 public:
 
