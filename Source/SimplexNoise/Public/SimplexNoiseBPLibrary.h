@@ -47,9 +47,9 @@ I only request that you mention me in the credits for your game in the way that 
 	struct FNoiseCell {
 		GENERATED_BODY()
 		UPROPERTY()
-			FPoint point[8];
+			TArray<FPoint> point[8] = {};
 		UPROPERTY()
-			float val[8];
+			TArray<float> val = {0,0,0,0,0,0,0,0};
 	};
 		
 UCLASS()
