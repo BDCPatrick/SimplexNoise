@@ -125,10 +125,11 @@ template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<FTriangle>()
 		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
 #endif
 		static void* NewStructOps();
+		static const UECodeGen_Private::FStructPropertyParams NewProp_point_Inner;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_point_MetaData[];
 #endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_point;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_point;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UECodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -141,13 +142,15 @@ template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<FTriangle>()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FTriangle>();
 	}
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point_Inner = { "point", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FPoint, METADATA_PARAMS(0, nullptr) }; // 2026903855
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point_MetaData[] = {
 		{ "ModuleRelativePath", "Public/SimplexNoiseBPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point = { "point", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, CPP_ARRAY_DIM(point, FTriangle), STRUCT_OFFSET(FTriangle, point), Z_Construct_UScriptStruct_FPoint, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point_MetaData), Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point_MetaData) }; // 2026903855
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point = { "point", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FTriangle, point), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point_MetaData), Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point_MetaData) }; // 2026903855
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FTriangle_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTriangle_Statics::NewProp_point,
 	};
 	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FTriangle_Statics::ReturnStructParams = {
@@ -191,14 +194,16 @@ template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<FNoiseCell>()
 		static const UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
 #endif
 		static void* NewStructOps();
+		static const UECodeGen_Private::FStructPropertyParams NewProp_point_Inner;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_point_MetaData[];
 #endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_point;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_point;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_val_Inner;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_val_MetaData[];
 #endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_val;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_val;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UECodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -211,20 +216,24 @@ template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<FNoiseCell>()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FNoiseCell>();
 	}
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point_Inner = { "point", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FPoint, METADATA_PARAMS(0, nullptr) }; // 2026903855
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point_MetaData[] = {
 		{ "ModuleRelativePath", "Public/SimplexNoiseBPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point = { "point", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, CPP_ARRAY_DIM(point, FNoiseCell), STRUCT_OFFSET(FNoiseCell, point), Z_Construct_UScriptStruct_FPoint, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point_MetaData), Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point_MetaData) }; // 2026903855
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point = { "point", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FNoiseCell, point), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point_MetaData), Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point_MetaData) }; // 2026903855
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val_Inner = { "val", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val_MetaData[] = {
 		{ "ModuleRelativePath", "Public/SimplexNoiseBPLibrary.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val = { "val", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, CPP_ARRAY_DIM(val, FNoiseCell), STRUCT_OFFSET(FNoiseCell, val), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val_MetaData), Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val_MetaData) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val = { "val", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FNoiseCell, val), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val_MetaData), Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FNoiseCell_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_point,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FNoiseCell_Statics::NewProp_val,
 	};
 	const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FNoiseCell_Statics::ReturnStructParams = {
@@ -1614,13 +1623,13 @@ template<> SIMPLEXNOISE_API UScriptStruct* StaticStruct<FNoiseCell>()
 	};
 	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_Statics::ScriptStructInfo[] = {
 		{ FPoint::StaticStruct, Z_Construct_UScriptStruct_FPoint_Statics::NewStructOps, TEXT("Point"), &Z_Registration_Info_UScriptStruct_Point, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FPoint), 2026903855U) },
-		{ FTriangle::StaticStruct, Z_Construct_UScriptStruct_FTriangle_Statics::NewStructOps, TEXT("Triangle"), &Z_Registration_Info_UScriptStruct_Triangle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTriangle), 2817961471U) },
-		{ FNoiseCell::StaticStruct, Z_Construct_UScriptStruct_FNoiseCell_Statics::NewStructOps, TEXT("NoiseCell"), &Z_Registration_Info_UScriptStruct_NoiseCell, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNoiseCell), 3769831178U) },
+		{ FTriangle::StaticStruct, Z_Construct_UScriptStruct_FTriangle_Statics::NewStructOps, TEXT("Triangle"), &Z_Registration_Info_UScriptStruct_Triangle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTriangle), 2135280322U) },
+		{ FNoiseCell::StaticStruct, Z_Construct_UScriptStruct_FNoiseCell_Statics::NewStructOps, TEXT("NoiseCell"), &Z_Registration_Info_UScriptStruct_NoiseCell, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNoiseCell), 736569856U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_USimplexNoiseBPLibrary, USimplexNoiseBPLibrary::StaticClass, TEXT("USimplexNoiseBPLibrary"), &Z_Registration_Info_UClass_USimplexNoiseBPLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USimplexNoiseBPLibrary), 3575820105U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_2201800943(TEXT("/Script/SimplexNoise"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_2255432473(TEXT("/Script/SimplexNoise"),
 		Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_Statics::ClassInfo),
 		Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Game_Design_Unreal_Projekte_LoH_TheTavern_Plugins_Subs_SimplexNoise_Source_SimplexNoise_Public_SimplexNoiseBPLibrary_h_Statics::ScriptStructInfo),
 		nullptr, 0);
