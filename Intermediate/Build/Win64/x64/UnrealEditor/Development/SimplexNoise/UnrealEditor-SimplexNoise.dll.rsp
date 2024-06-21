@@ -11,6 +11,7 @@
 /DELAY:UNLOAD
 /DLL
 /PDBALTPATH:%_PDB%
+/d2:-ExtendedWarningInfo
 /OPT:NOREF
 /OPT:NOICF
 /INCREMENTAL:NO
@@ -20,7 +21,7 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64"
+/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
@@ -34,9 +35,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"Z:\UE_Projekte\LoH_TheTavern\Intermediate\Build\Win64\x64\LoH_TheTavernEditor\Development\Engine\SharedPCH.Engine.Cpp17.InclOrderUnreal5_0.h.obj"
-"Z:\UE_Projekte\LoH_TheTavern\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\Module.SimplexNoise.cpp.obj"
-"Z:\UE_Projekte\LoH_TheTavern\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\Default.rc2.res"
+"Z:\UE_Projekte\LoH_TheTavern_5-4\Intermediate\Build\Win64\x64\LoH_TheTavernEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"Z:\UE_Projekte\LoH_TheTavern_5-4\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\Module.SimplexNoise.cpp.obj"
+"Z:\UE_Projekte\LoH_TheTavern_5-4\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
@@ -65,7 +66,7 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"Z:\UE_Projekte\LoH_TheTavern\Plugins\Subs\SimplexNoise\Binaries\Win64\UnrealEditor-SimplexNoise.dll"
-/IMPLIB:"Z:\UE_Projekte\LoH_TheTavern\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\UnrealEditor-SimplexNoise.sup.lib"
-/PDB:"Z:\UE_Projekte\LoH_TheTavern\Plugins\Subs\SimplexNoise\Binaries\Win64\UnrealEditor-SimplexNoise.pdb"
+/OUT:"Z:\UE_Projekte\LoH_TheTavern_5-4\Plugins\Subs\SimplexNoise\Binaries\Win64\UnrealEditor-SimplexNoise.dll"
+/IMPLIB:"Z:\UE_Projekte\LoH_TheTavern_5-4\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\UnrealEditor-SimplexNoise.sup.lib"
+/PDB:"Z:\UE_Projekte\LoH_TheTavern_5-4\Plugins\Subs\SimplexNoise\Binaries\Win64\UnrealEditor-SimplexNoise.pdb"
 /ignore:4078
