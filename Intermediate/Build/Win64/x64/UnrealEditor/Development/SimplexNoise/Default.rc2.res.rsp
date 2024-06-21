@@ -77,9 +77,9 @@
 /DNDEBUG=1
 /DUE_BUILD_DEVELOPMENT=1
 /DORIGINAL_FILE_NAME="UnrealEditor-SimplexNoise.dll"
-/DBUILD_ICON_FILE_NAME="\"Z:\\UE_Projekte\\LoH_TheTavern_5-4\\Build\\Windows\\Application.ico\""
+/DBUILD_ICON_FILE_NAME="\"Z:\\UE_Projekte\\LoH_TheTavern\\Build\\Windows\\Application.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="Legends of Hispheria: The Tavern"
 /DPROJECT_PRODUCT_IDENTIFIER=LoH_TheTavern
-/fo "Z:\UE_Projekte\LoH_TheTavern_5-4\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\Default.rc2.res"
+/fo "Z:\UE_Projekte\LoH_TheTavern\Plugins\Subs\SimplexNoise\Intermediate\Build\Win64\x64\UnrealEditor\Development\SimplexNoise\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"
